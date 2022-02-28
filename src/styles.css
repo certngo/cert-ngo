@@ -403,14 +403,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
-.bg-greenish{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 204 51 / var(--tw-bg-opacity));
-}
-.bg-grayish{
-  --tw-bg-opacity: 1;
-  background-color: rgb(98 108 120 / var(--tw-bg-opacity));
-}
 .p-12{
   padding: 3rem;
 }
@@ -467,11 +459,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .font-bold{
   font-weight: 700;
 }
 .font-medium{
   font-weight: 500;
+}
+.tracking-wide{
+  letter-spacing: 0.025em;
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -489,13 +488,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
-.text-gray-300{
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-.hover\:bg-4sektor:hover{
+.hover\:bg-greenish:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 33 43 / var(--tw-bg-opacity));
+  background-color: rgb(0 204 51 / var(--tw-bg-opacity));
 }
 @media (min-width: 640px){
   .sm\:h-32{
