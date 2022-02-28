@@ -10,7 +10,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        '4sektor': '#1E212B'
+        '4sektor': '#1e212b',
+        'greenish': '#00cc33',
+        'grayish': '#626c78',
+        'box':'#626c78',
       },
       fontFamily:{
         lato: ['Lato', 'sans-serif']
