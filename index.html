@@ -15,6 +15,19 @@
   <meta property="og:url" content="">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="src/styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .collapsible {
+      outline: none;
+    }
+
+    .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      transition: height 0.2s ease-out;
+    }
+  </style>
 </head>
 
 <body class="font-lato">
@@ -41,90 +54,114 @@
   <section class="mx-auto max-w-7xl">
 
     <div class="px-5">
-      <div class=" py-5 grid md:py-16 gap-8 justify-center lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12 ">
-        <div class="bg-box  p-12 text-gray-100 text-center md:text-left">
-          <p class="text-xl ">Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu świadomości
-            cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych. Chcemy pomóc
-            organizacjom pozarządowym chronić ich dane oraz zapewniać wsparcie na wypadek ataku.</p>
+      <div
+        class="py-5 content-start grid md:py-16 gap-8 justify-center lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12 ">
+        <!-- first accordion -->
+        <div p-12 text-center md:text-left md:h-full>
+          <div class="bg-box p-12 text-gray-100 text-center md:h-80">
+            <p class="text-xl ">Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu
+              świadomości
+              cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych. Chcemy pomóc
+              organizacjom pozarządowym chronić ich dane oraz zapewniać wsparcie na wypadek ataku.</p>
 
-          <p class="pt-4 font-bold">W ramach projektu Cert NGO oferuje bezpłatnie następujące wsparcie dla organizacji
-            pozarządowych:
-          </p>
+            <div class="flex collapsible items-center justify-center">
+              <button type="button" class=" text-white bg-greenish font-bold py-3 px-12">ZOBACZ</button>
+            </div>
 
-          <ul class="pt-4 list-disc ml-6 text-left">
-            <li>monitorowanie bezpieczeństwa sieci i systemów informatycznych</li>
-            <li>audyty bezpieczeństwa</li>
-            <li>testy penetracyjne systemów i sieci</li>
-            <li>system powiadomień o zagrożeniach dla bezpieczeństwa IT</li>
-            <li>konsultacje i szkolenia dla pracowników organizacji</li>
-            <li>wsparcie w obsłudze incydentów, w tym usuwanie skutków i analizę powłamaniową</li>
-            <li>wsparcie w kontaktach z urzędami odpowiedzialnymi za ochronę danych osobowych</li>
-            <li>usługi z zakresu informatyki kryminalistycznej i zabezpieczania materiału dowodowego</li>
-            <li>wsparcie w zakresie budowy modelu zagrożeń i procesów pozwalających na ich zminimalizowanie</li>
+            <div class="content">
+              <p class="pt-4 font-bold">W ramach projektu Cert NGO oferuje bezpłatnie następujące wsparcie dla
+                organizacji
+                pozarządowych:
+              </p>
 
-          </ul>
+              <ul class="pt-4 list-disc ml-6 text-left">
+                <li>monitorowanie bezpieczeństwa sieci i systemów informatycznych</li>
+                <li>audyty bezpieczeństwa</li>
+                <li>testy penetracyjne systemów i sieci</li>
+                <li>system powiadomień o zagrożeniach dla bezpieczeństwa IT</li>
+                <li>konsultacje i szkolenia dla pracowników organizacji</li>
+                <li>wsparcie w obsłudze incydentów, w tym usuwanie skutków i analizę powłamaniową</li>
+                <li>wsparcie w kontaktach z urzędami odpowiedzialnymi za ochronę danych osobowych</li>
+                <li>usługi z zakresu informatyki kryminalistycznej i zabezpieczania materiału dowodowego</li>
+                <li>wsparcie w zakresie budowy modelu zagrożeń i procesów pozwalających na ich zminimalizowanie</li>
 
-          <p class="py-4">
-            <span class="inline-flex items-center mt-6 px-3 py-2 text-md font-medium bg-gray-100 text-gray-800">
-              Z uwagi na ograniczone zasoby oraz aktualną sytuację na Ukrainie nie jesteśmy w stanie pomóc wszystkim
-              zainteresowanym organizacjom. Pierwszeństwo mają NGOsy działające na rzecz praw człowieka,
-              przeciwdziałaniu dyskryminacji oraz pomagające uchodźcom.
-            </span>
-          </p>
+              </ul>
 
-          <div class="text-center">
-            <p class="my-8 text-xl">Jeżeli chcesz się z nami skontaktować napisz na adres:</p>
-            <a href="mailto:help@cert.ngo"
-              class="bg-4sektor hover:bg-greenish text-white font-bold p-4 text-center tracking-wide">
-              <strong>help@cert.ngo</strong>
-            </a>
+              <p class="py-4">
+                <span class="inline-flex items-center mt-6 px-3 py-2 text-md font-medium bg-gray-100 text-gray-800">
+                  Z uwagi na ograniczone zasoby oraz aktualną sytuację na Ukrainie nie jesteśmy w stanie pomóc wszystkim
+                  zainteresowanym organizacjom. Pierwszeństwo mają NGOsy działające na rzecz praw człowieka,
+                  przeciwdziałaniu dyskryminacji oraz pomagające uchodźcom.
+                </span>
+              </p>
+
+              <div class="text-center">
+                <p class="my-8 text-xl">Jeżeli chcesz się z nami skontaktować napisz na adres:</p>
+                <a href="mailto:help@cert.ngo"
+                  class="bg-4sektor hover:bg-greenish text-white font-bold p-4 text-center tracking-wide">
+                  <strong>help@cert.ngo</strong>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-box  p-12   text-gray-100">
-          <p class="text-xl">Метою проекту Cert NGO є підтримка неурядових організацій у розвитку цифрової обізнаності
-            та реагуванні на загрози у галузі інформаційної безпеки. Ми хочемо допомогти неурядовим організаціям
-            захистити свої дані та надати підтримку в разі атаки.</p>
+        <!-- second accordion -->
+        <div p-12 text-center md:text-left md:h-full>
+          <div class="bg-box p-12 text-gray-100 text-center md:h-80">
+            <p class="text-xl">Метою проекту Cert NGO є підтримка неурядових організацій у розвитку цифрової обізнаності
+              та реагуванні на загрози у галузі інформаційної безпеки. Ми хочемо допомогти неурядовим організаціям
+              захистити свої дані та надати підтримку в разі атаки.</p>
+
+            <div class="flex collapsible items-center justify-center">
+              <button type="button" class=" text-white bg-greenish font-bold py-3 px-12">ZOBACZ</button>
+            </div>
+
+            <div class="content">
 
 
-          <p class="pt-4 font-bold">У рамках проекту Cert NGO пропонує неурядовим організаціям наступну підтримку:</p>
+              <p class="pt-4 font-bold">У рамках проекту Cert NGO пропонує неурядовим організаціям наступну підтримку:
+              </p>
 
-          <ul class="pt-4 list-disc ml-6">
-            <li>моніторинг безпеки мережевих та інформаційних систем</li>
-            <li>аудити безпеки</li>
-            <li>тести на подолання захисту системи та мережі</li>
-            <li>система оповіщення про загрози ІТ-безпеці</li>
-            <li>консультації та навчання для працівників організації</li>
-            <li>підтримка в обробці інцидентів, включаючи усунення наслідків та аналіз після вторгнення</li>
-            <li>підтримка в контактах з інститутами, відповідальними за захист персональних даних</li>
-            <li>послуги у сфері судової інформатики та забезпечення доказового матеріалу</li>
-            <li>підтримка побудови моделі загроз і процесів, що дозволяють їх мінімізувати</li>
+              <ul class="pt-4 list-disc ml-6">
+                <li>моніторинг безпеки мережевих та інформаційних систем</li>
+                <li>аудити безпеки</li>
+                <li>тести на подолання захисту системи та мережі</li>
+                <li>система оповіщення про загрози ІТ-безпеці</li>
+                <li>консультації та навчання для працівників організації</li>
+                <li>підтримка в обробці інцидентів, включаючи усунення наслідків та аналіз після вторгнення</li>
+                <li>підтримка в контактах з інститутами, відповідальними за захист персональних даних</li>
+                <li>послуги у сфері судової інформатики та забезпечення доказового матеріалу</li>
+                <li>підтримка побудови моделі загроз і процесів, що дозволяють їх мінімізувати</li>
 
-          </ul>
+              </ul>
 
-          <p class="py-4">
-            <span class="inline-flex items-center mt-6 px-3 py-2 text-md font-medium bg-gray-100 text-gray-800">
-              Через обмежені ресурси та ситуацію, що склалася в Україні, ми не можемо допомогти усім зацікавленим
-              організаціям. Пріоритет надається неурядовим організаціям, які займаються захистом прав людини, боротьбою
-              з дискримінацією та надають допомогу біженцям.
-            </span>
-          </p>
+              <p class="py-4">
+                <span class="inline-flex items-center mt-6 px-3 py-2 text-md font-medium bg-gray-100 text-gray-800">
+                  Через обмежені ресурси та ситуацію, що склалася в Україні, ми не можемо допомогти усім зацікавленим
+                  організаціям. Пріоритет надається неурядовим організаціям, які займаються захистом прав людини,
+                  боротьбою
+                  з дискримінацією та надають допомогу біженцям.
+                </span>
+              </p>
 
 
 
-          <div class="text-center">
-            <p class="my-8 text-xl">Якщо ви хочете зв’язатися з нами, пишіть на:</p>
-            <a href="mailto:help@cert.ngo" class="bg-4sektor hover:bg-greenish text-white font-bold p-4 text-center ">
-              <strong>help@cert.ngo</strong>
-            </a>
+              <div class="text-center">
+                <p class="my-8 text-xl">Якщо ви хочете зв’язатися з нами, пишіть на:</p>
+                <a href="mailto:help@cert.ngo"
+                  class="bg-4sektor hover:bg-greenish text-white font-bold p-4 text-center ">
+                  <strong>help@cert.ngo</strong>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <section  class="bg-grayish px-16 pb-16">
+  <section class="bg-grayish px-16 pb-16">
     <h2
       class="text-white text-2xl sm:text-4xl py-8 md:py-12 font-extrabold mx-auto max-w-7xl text-center md:text-left items-center md:items-start">
       Bezpieczeństwo teleinformatyczne <span class="text-greenish">organizacji</span> pozarządowych</h2>
@@ -149,6 +186,32 @@
     Chmielna 122/113
     00-801 Warszawa
   </section>
+
+
+  <script>
+
+    //TODO: Fix accordion with event-listener on scroll (auto-size)
+    //TODO: move jquery to local server
+    //TODO: move styles and scripts to new files
+
+    var coll = document.getElementsByClassName("collapsible");
+    var boxx = document.getElementsByClassName("")
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          content.parentNode.style.height = null;
+        } else {
+          content.style.maxHeight = Number(content.scrollHeight) + "px";
+          content.parentNode.style.height = Number(content.parentNode.offsetHeight + content.scrollHeight) + "px";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
