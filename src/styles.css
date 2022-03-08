@@ -365,11 +365,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.ml-6{
-  margin-left: 1.5rem;
-}
 .mt-6{
   margin-top: 1.5rem;
+}
+.ml-6{
+  margin-left: 1.5rem;
 }
 .flex{
   display: flex;
@@ -379,6 +379,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid{
   display: grid;
+}
+.h-16{
+  height: 4rem;
 }
 .max-w-7xl{
   max-width: 80rem;
@@ -395,11 +398,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center{
   justify-content: center;
 }
+.justify-between{
+  justify-content: space-between;
+}
 .gap-4{
   gap: 1rem;
 }
 .gap-8{
   gap: 2rem;
+}
+.space-x-7 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .bg-4sektor{
   --tw-bg-opacity: 1;
@@ -430,6 +441,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-2{
   padding: 0.5rem;
 }
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -445,10 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .px-5{
   padding-left: 1.25rem;
@@ -516,6 +535,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-800{
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .hover\:bg-greenish:hover{
   --tw-bg-opacity: 1;
