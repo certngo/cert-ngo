@@ -26,6 +26,19 @@
       overflow: hidden;
       transition: height 0.2s ease-out;
     }
+	
+	.box-content {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  height: 14rem;
+	  text-align: justify;
+	  word-wrap: break-word;
+	  word-break: break-word;
+	  text-align-last: center;
+	  hyphens: auto;
+	}
+
   </style>
 </head>
 
@@ -58,14 +71,15 @@
         <!-- first accordion -->
         <div p-12 text-center md:text-left md:h-full>
           <div class="bg-box p-12 text-gray-100 text-center md:h-80">
-            <p class="text-xl ">Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu
-              świadomości
-              cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych. Chcemy pomóc
-              organizacjom pozarządowym chronić ich dane oraz zapewniać wsparcie na wypadek ataku.</p>
-
-            <div class="flex collapsible items-center justify-center">
-              <button type="button" class=" text-white bg-greenish font-bold py-3 px-12">ZOBACZ</button>
-            </div>
+		    <div class="box-content">
+              <p class="text-xl ">Ce&shy;lem pro&shy;jek&shy;tu Cert NGO jest wspie&shy;ra&shy;nie o&shy;rga&shy;ni&shy;za&shy;cji po&shy;za&shy;rzą&shy;do&shy;wych w bu&shy;do&shy;wa&shy;niu
+                świa&shy;do&shy;mo&shy;ści cy&shy;fro&shy;wej oraz re&shy;a&shy;go&shy;wa&shy;niu na za&shy;gro&shy;że&shy;nia dla be&shy;zpie&shy;cze&shy;ństwa sy&shy;ste&shy;mów i&shy;nfo&shy;rma&shy;ty&shy;cznych. Chce&shy;my po&shy;móc
+                o&shy;rga&shy;ni&shy;za&shy;cjom po&shy;za&shy;rzą&shy;do&shy;wym chro&shy;nić ich da&shy;ne oraz za&shy;pe&shy;wniać wspa&shy;rcie na wy&shy;pa&shy;dek a&shy;ta&shy;ku.</p>
+              
+              <div class="flex collapsible items-center justify-center">
+                <button type="button" class=" text-white bg-greenish font-bold py-3 px-12">ZOBACZ</button>
+              </div>
+			</div>
 
             <div class="content">
               <p class="pt-4 font-bold">W ramach projektu Cert NGO oferuje bezpłatnie następujące wsparcie dla
@@ -108,13 +122,17 @@
         <!-- second accordion -->
         <div p-12 text-center md:text-left md:h-full>
           <div class="bg-box p-12 text-gray-100 text-center md:h-80">
-            <p class="text-xl">Метою проекту Cert NGO є підтримка неурядових організацій у розвитку цифрової обізнаності
-              та реагуванні на загрози у галузі інформаційної безпеки. Ми хочемо допомогти неурядовим організаціям
-              захистити свої дані та надати підтримку в разі атаки.</p>
+			<div class="box-content">
+			  <p class="text-xl">
+			    Метою про&shy;екту Cert NGO є підтримка неурядови&shy;х орг&shy;анізацій у розвитку цифрової обізнаності
+                та реагуванні на загрози у галузі інформаційної безпеки. Ми хочемо допомогти неурядовим організаціям
+                захистити свої дані та надати підтримку в разі атаки.
+			  </p>
+              <div class="flex collapsible items-center justify-center">
+                <button type="button" class=" text-white bg-greenish font-bold py-3 px-12">ZOBACZ</button>
+              </div>
+			</div>
 
-            <div class="flex collapsible items-center justify-center">
-              <button type="button" class=" text-white bg-greenish font-bold py-3 px-12">ZOBACZ</button>
-            </div>
 
             <div class="content">
 
@@ -199,7 +217,7 @@
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        var content = this.nextElementSibling;
+        var content = this.parentNode.nextElementSibling;
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
           content.parentNode.style.height = null;
@@ -208,6 +226,18 @@
           content.parentNode.style.height = Number(content.parentNode.offsetHeight + content.scrollHeight) + "px";
         }
       });
+
+      coll[i].addEventListener("resize", () => {
+        this.classList.toggle("active");
+        var content = this.parentNode.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          content.parentNode.style.height = null;
+        } else {
+          content.style.maxHeight = 'auto';
+          content.parentNode.style.height = 'auto';
+        }
+      })
     }
   </script>
 </body>
