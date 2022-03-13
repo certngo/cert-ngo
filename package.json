@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "postcss styles.css -o src/styles.css",
-    "start": "postcss styles.css -o src/styles.css && sergey && rm -rf docs && mv public docs && rm -rf docs/docs",
+    "start": "postcss styles.css -o src/styles.css && sergey --output=docs",
     "push": "npm run start && cp CNAME docs/ && git add . && timestamp=$(date \"+%s\") && git commit -m \"automated deployment $timestamp\" && git push",
     "dev": "sergey --watch"
   },
