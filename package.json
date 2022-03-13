@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "postcss styles.css -o src/styles.css",
-    "start": "postcss styles.css -o src/styles.css && sergey",
+    "start": "postcss styles.css -o src/styles.css && sergey && mv public docs",
     "dev": "sergey --watch"
   },
   "keywords": [],
