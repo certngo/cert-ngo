@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "postcss styles.css -o src/styles.css",
-    "start": "postcss styles.css -o src/styles.css && sergey --output=docs",
+    "start": "postcss styles.css -o src/styles.css && sergey --output=docs --exclude=tailwind.config.js && rm docs/styles.css docs/tailwind.config.js docs/postcss.config.js",
     "push": "npm run start && cp CNAME docs/ && git add . && timestamp=$(date \"+%s\") && git commit -m \"automated deployment $timestamp\" && git push",
     "dev": "sergey --watch"
   },
