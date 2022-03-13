@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "postcss styles.css -o src/styles.css",
     "start": "postcss styles.css -o src/styles.css && sergey && rm -rf docs && mv public docs ",
     "push": "npm run start && cp CNAME docs/ && git add . && timestamp=$(date \"+%s\") && git commit -m \"automated deployment $timestamp\" && git push",
