@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "postcss styles.css -o src/styles.css",
     "start": "postcss styles.css -o src/styles.css && sergey && mv public docs && cp CNAME docs/",
+    "prod": "git add . && git commit -a -m 'new' && git push",
     "dev": "sergey --watch"
   },
   "keywords": [],
