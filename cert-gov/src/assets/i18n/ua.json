@@ -1,0 +1,29 @@
+{
+    "html": {
+        "title": "Bezpieczeństwo teleinformatyczne organizacji pozarządowych"
+    },
+    "footer": {
+        "4sektor": "Czwarty Sektor",
+        "OperatorIs": "Operatorem projektu CERT.NGO jest fundacja",
+        "TheObjective": "Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu świadomości cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych."
+    },
+    "mainPage": {
+        "h1Title": "Bezpieczeństwo teleinformatyczne <span class=\"text-greenish\">organizacji</span> pozarządowych",
+        "ObjectiveDescription": " Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu świadomości cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych."
+    },
+    "detailPage":{
+        "objective": "Метою проекту Cert NGO є підтримка неурядових організацій у розвитку цифрової обізнаності та реагуванні на загрози у галузі інформаційної безпеки. Ми хочемо допомогти неурядовим організаціям захистити свої дані та надати підтримку в разі атаки.",
+        "weOffer": "У рамках проекту Cert NGO пропонує неурядовим організаціям наступну підтримку:",
+        "monitoring": "моніторинг безпеки мережевих та інформаційних систем",
+        "securityAudits": "аудити безпеки",
+        "penTests": "тести на подолання захисту системи та мережі",
+        "monitoringSystem": "система оповіщення про загрози ІТ-безпеці",
+        "consultationsAndCourses": "консультації та навчання для працівників організації",
+        "helpWithIncidents": "підтримка в обробці інцидентів, включаючи усунення наслідків та аналіз після вторгнення",
+        "helpWithContacts": "підтримка в контактах з інститутами, відповідальними за захист персональних даних",
+        "forensicITHelp": "послуги у сфері судової інформатики та забезпечення доказового матеріалу",
+        "helpWithModelBuilding": "підтримка побудови моделі загроз і процесів, що дозволяють їх мінімізувати",
+        "contactInvitation": "Якщо ви хочете зв’язатися з нами, пишіть на",
+        "specialMessageUASituation": "Через обмежені ресурси та ситуацію, що склалася в Україні, ми не можемо допомогти усім зацікавленим організаціям. Пріоритет надається неурядовим організаціям, які займаються захистом прав людини, боротьбою з дискримінацією та надають допомогу  біженцям."
+    }
+}

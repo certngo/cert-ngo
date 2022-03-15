@@ -1,0 +1,29 @@
+{
+    "html": {
+        "title": "Bezpieczeństwo teleinformatyczne organizacji pozarządowych"
+    },
+    "footer": {
+        "4sektor": "Czwarty Sektor",
+        "OperatorIs": "Operatorem projektu CERT.NGO jest fundacja",
+        "TheObjective": "Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu świadomości cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych."
+    },
+    "mainPage": {
+        "h1Title": "Bezpieczeństwo teleinformatyczne <span class=\"text-greenish\">organizacji</span> pozarządowych",
+        "ObjectiveDescription": " Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu świadomości cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych."
+    },
+    "detailPage":{
+        "objective": "Le projet Cert ONG a pour objectif d'aider les ONG à développer une conscience numérique et à répondre aux menaces pesant sur la sécurité des systèmes d'information. Nous voulons aider les ONG à protéger leurs données et leur fournir une assistance en cas d'attaque.",
+        "weOffer": "Le projet Cert ONG offre gratuitement aux ONG le soutien suivant:",
+        "monitoring": "surveillance de la sécurité des réseaux et des systèmes d'information",
+        "securityAudits": "audits de sécurité",
+        "penTests": "tests de pénétration des systèmes et des réseaux",
+        "monitoringSystem": "système de notification des risques liés à la sécurité informatique",
+        "consultationsAndCourses": "consultations et formations pour les employés des organisations",
+        "helpWithIncidents": "soutien dans le traitement des incidents, y compris l'enlèvement des effets et l'analyse post-braquage numériques",
+        "helpWithContacts": "soutien dans les contacts avec les autorités responsables de la protection des données personnelles",
+        "forensicITHelp": "des services dans le domaine de la criminalistique informatique et de la sécurisation des preuves",
+        "helpWithModelBuilding": "aide à l'élaboration d'un modèle de menace et de processus pour minimiser les menaces",
+        "contactInvitation": "Si vous souhaitez nous contacter, veuillez envoyer un courriel à",
+        "specialMessageUASituation": "En raison de ressources limitées et de la situation actuelle en Ukraine, nous ne sommes pas en mesure d'aider toutes les organisations intéressées. La priorité est donnée aux ONG travaillant sur les droits de l'Homme, la lutte contre la discrimination et les réfugiés."
+    }
+}

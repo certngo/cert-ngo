@@ -1,0 +1,29 @@
+{
+    "html": {
+        "title": "Bezpieczeństwo teleinformatyczne organizacji pozarządowych"
+    },
+    "footer": {
+        "4sektor": "Czwarty Sektor",
+        "OperatorIs": "Operatorem projektu CERT.NGO jest fundacja",
+        "TheObjective": "Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu świadomości cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych."
+    },
+    "mainPage": {
+        "h1Title": "Bezpieczeństwo teleinformatyczne <span class=\"text-greenish\">organizacji</span> pozarządowych",
+        "ObjectiveDescription": " Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu świadomości cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych."
+    },
+    "detailPage":{
+        "objective": "Celem projektu Cert NGO jest wspieranie organizacji pozarządowych w budowaniu świadomości cyfrowej oraz reagowaniu na zagrożenia dla bezpieczeństwa systemów informatycznych. Chcemy pomóc organizacjom pozarządowym chronić ich dane oraz zapewniać wsparcie na wypadek ataku",
+        "weOffer": "W ramach projektu Cert NGO oferuje bezpłatnie następujące wsparcie dla organizacji pozarządowych:",
+        "monitoring": "monitorowanie bezpieczeństwa sieci i systemów informatycznych",
+        "securityAudits": "audyty bezpieczeństwa",
+        "penTests": "testy penetracyjne systemów i sieci",
+        "monitoringSystem": "system powiadomień o zagrożeniach dla bezpieczeństwa IT",
+        "consultationsAndCourses": "konsultacje i szkolenia dla pracowników organizacji",
+        "helpWithIncidents": "wsparcie w obsłudze incydentów, w tym usuwanie skutków i analizę powłamaniową",
+        "helpWithContacts": "wsparcie w kontaktach z urzędami odpowiedzialnymi za ochronę danych osobowych",
+        "forensicITHelp": "usługi z zakresu informatyki kryminalistycznej i zabezpieczania materiału dowodowego",
+        "helpWithModelBuilding": "wsparcie w zakresie budowy modelu zagrożeń i procesów pozwalających na ich zminimalizowanie",
+        "contactInvitation": "Jeżeli chcesz się z nami skontaktować napisz na adres",
+        "specialMessageUASituation": "Z uwagi na ograniczone zasoby oraz aktualną sytuację na Ukrainie nie jesteśmy w stanie pomóc wszystkim zainteresowanym organizacjom. Pierwszeństwo mają NGOsy działające na rzecz praw człowieka, przeciwdziałaniu dyskryminacji oraz pomagające uchodźcom."
+    }
+}

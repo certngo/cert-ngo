@@ -1,0 +1,59 @@
+<section class="px-16 pb-16 bg-4sektor">
+    <h1
+        [innerHtml]="'mainPage.h1Title' | translate"
+        class="items-center mt-0 p-8 mx-auto text-2xl font-extrabold text-center text-white sm:text-4xl md:py-12 max-w-7xl md:text-left md:items-start">
+        </h1>
+
+    <div class="grid grid-cols-1 gap-4 mx-auto max-w-7xl md:grid-cols-3 md:mb-16">
+        <div class="items-center justify-center text-center text-white md:text-left md:items-start md:justify-start">
+            {{"mainPage.ObjectiveDescription" | translate }}</div>
+        <div></div>
+        <div class="flex items-center justify-center md:justify-end">
+            <a href="mailto:help@cert.ngo"
+                class="px-12 py-3 font-bold text-white bg-greenish hover:bg-box">help@cert.ngo</a>
+        </div>
+    </div>
+</section>
+
+<div class="relative bg-white py-2 sm:py-2 lg:py-2">
+    <div class="mx-auto max-w-md text-left sm:max-w-3xl lg:max-w-7xl ">
+        <div class="mt-2">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1 mb-6">
+                <div class="pt-6">
+                    <div class="flow-root bg-box px-6 pb-8">
+                        <div class="mt-6">
+
+                            <div class="mt-5 text-base text-gray-100">
+                                <p class="text-xl">{{"detailPage.objective" | translate}}</p>
+
+                                <p class="pt-4 font-bold">{{"detailPage.weOffer" | translate}}
+                                </p>
+
+                                <ul class="pt-4 ml-6 list-disc text-left">
+                                    <li>{{"detailPage.monitoring" | translate}}</li>
+                                    <li>{{"detailPage.securityAudits" | translate}}</li>
+                                    <li>{{"detailPage.penTests" | translate}}</li>
+                                    <li>{{"detailPage.monitoringSystem" | translate}}</li>
+                                    <li>{{"detailPage.consultationsAndCourses" | translate}}</li>
+                                    <li>{{"detailPage.helpWithIncidents" | translate}}
+                                    </li>
+                                    <li>{{"detailPage.helpWithContacts" | translate}}
+                                    </li>
+                                    <li>{{"detailPage.forensicITHelp" | translate}}</li>
+                                    <li>{{"detailPage.helpWithModelBuilding" | translate}}</li>
+
+                                </ul>
+                                <p class="py-4">{{"detailPage.contactInvitation" | translate}} <span
+                                        class="text-greenish">help@cert.ngo</span></p>
+                                <p class="py-4">
+                                    <span
+                                        class="inline-flex items-center px-3 py-2 font-medium text-gray-800 bg-gray-100 text-md">
+                                        {{"detailPage.specialMessageUASituation" | translate}}</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
