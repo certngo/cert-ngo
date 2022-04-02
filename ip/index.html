@@ -1,0 +1,17 @@
+<sergey-import src="header" />
+
+
+<div class="text-center block text-xl  py-2 pr-4 pl-3 text-gray-400 rounded font-bold">
+  Twoje IP: 
+</div>
+<div id="ip" class="text-center block text-xl  py-2 pr-4 pl-3 text-gray-400 rounded "></div>
+
+
+<script type="application/javascript">
+    function getIP(json) {
+      document.getElementById('ip').innerHTML = json.ip
+    }
+  </script>
+  
+  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<sergey-import src="footer" />
