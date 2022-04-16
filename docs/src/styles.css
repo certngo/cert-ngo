@@ -463,6 +463,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-md{
   max-width: 28rem;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .list-disc{
   list-style-type: disc;
 }
@@ -489,6 +498,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .gap-8{
   gap: 2rem;
+}
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+.divide-gray-200 > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-divide-opacity));
 }
 .rounded-lg{
   border-radius: 0.5rem;
@@ -563,6 +581,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .pb-16{
   padding-bottom: 4rem;
 }
@@ -580,6 +606,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pt-4{
   padding-top: 1rem;
+}
+.pt-1{
+  padding-top: 0.25rem;
+}
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 .text-left{
   text-align: left;
@@ -638,6 +670,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 .hover\:bg-box:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(98 108 120 / var(--tw-bg-opacity));
@@ -686,6 +722,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 @media (min-width: 640px){
+  .sm\:w-1\/2{
+    width: 50%;
+  }
   .sm\:max-w-3xl{
     max-width: 48rem;
   }
@@ -770,6 +809,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 @media (min-width: 1024px){
+  .lg\:w-96{
+    width: 24rem;
+  }
   .lg\:max-w-7xl{
     max-width: 80rem;
   }

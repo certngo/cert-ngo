@@ -1,5 +1,4 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
 
   mode: 'jit',
   content: [
@@ -7,6 +6,7 @@ module.exports = {
     './_imports/*.html',
     './style.css',
     './pl/*.html',
+    './o-nas/*.html',
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
