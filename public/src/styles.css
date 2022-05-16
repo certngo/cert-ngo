@@ -427,9 +427,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-6{
   margin-left: 1.5rem;
 }
-.mb-0{
-  margin-bottom: 0px;
-}
 .block{
   display: block;
 }
@@ -466,6 +463,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-md{
   max-width: 28rem;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .list-disc{
   list-style-type: disc;
 }
@@ -498,31 +504,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .rounded{
   border-radius: 0.25rem;
-}
-.rounded-none{
-  border-radius: 0px;
-}
-.border{
-  border-width: 1px;
-}
-.border-0{
-  border-width: 0px;
-}
-.border-t-0{
-  border-top-width: 0px;
-}
-.border-l-0{
-  border-left-width: 0px;
-}
-.border-r-0{
-  border-right-width: 0px;
-}
-.border-b-0{
-  border-bottom-width: 0px;
-}
-.border-gray-200{
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 .bg-4sektor{
   --tw-bg-opacity: 1;
@@ -591,9 +572,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 .pb-16{
   padding-bottom: 4rem;
@@ -612,6 +601,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pt-4{
   padding-top: 1rem;
+}
+.pt-1{
+  padding-top: 0.25rem;
+}
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 .text-left{
   text-align: left;
@@ -670,12 +665,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
-.transition{
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 .hover\:bg-box:hover{
   --tw-bg-opacity: 1;
